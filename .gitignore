@@ -4,3 +4,9 @@
 *.jar
 *.war
 *.ear
+
+#eclipse related#
+.project
+.classpath
+target/
+.setting/
