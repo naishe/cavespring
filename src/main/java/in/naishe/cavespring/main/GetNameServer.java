@@ -26,7 +26,7 @@ public class GetNameServer {
 	 */
 	public static void main(String[] args) throws InvalidKeyException, MalformedURLException, NoSuchAlgorithmException, IllegalStateException, IOException {
 		HashMap<String, String> param = ConsoleHelper.getParam(args);
-		if(param.get("-id")==null){
+		if(ConsoleHelper.isHelp(args) || param.get("-id")==null){
 			System.out.println(usage);
 			System.exit(1);
 		}

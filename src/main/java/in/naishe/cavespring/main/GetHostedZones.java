@@ -27,6 +27,11 @@ public class GetHostedZones {
 	 */
 	public static void main(String[] args) throws InvalidKeyException, MalformedURLException, NoSuchAlgorithmException, IllegalStateException, IOException {
 		HashMap<String, String> param = ConsoleHelper.getParam(args);
+		if(ConsoleHelper.isHelp(args)){
+			System.out.println(usage);
+			System.exit(1);
+			return;
+		}
 		
 		int maxItems = param.get("-n")!=null?Integer.parseInt(param.get("-n")):0;
 		System.out.println(

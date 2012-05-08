@@ -41,7 +41,7 @@ public class CreateOrUpdateAName {
 	 */
 	public static void main(String[] args) throws InvalidKeyException, MalformedURLException, NoSuchAlgorithmException, IllegalStateException, IOException, ValidityException, ParsingException {
 		HashMap<String, String> params = ConsoleHelper.getParam(args);
-		if(params.get("-n")==null || params.get("-i")==null || params.get("-z")==null){
+		if(ConsoleHelper.isHelp(args) || params.get("-n")==null || params.get("-i")==null || params.get("-z")==null){
 			System.out.println(usage);
 			System.exit(1);
 			return;

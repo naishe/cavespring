@@ -22,4 +22,12 @@ public class ConsoleHelper {
 		return hm;
 	}
 
+	public static boolean isHelp(String[] args) {
+		if(args == null || args.length == 0)
+			return false;
+		if(args[0].equalsIgnoreCase("-h") || args[0].equalsIgnoreCase("--help"))
+			return true;
+		return false;
+	}
+
 }
