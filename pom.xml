@@ -5,6 +5,14 @@
   <name>CaveSpring</name>
   <version>0.0.1</version>
   <description>Route53 Java API</description>
+  <inceptionYear>2010</inceptionYear>
+  <developers>
+  	<developer>
+  		<name>Nishant Neeraj</name>
+  		<email>nishant dot neeraj at gmail dot com</email>
+  		<organizationUrl>http://naishe.in</organizationUrl>
+  	</developer>
+  </developers>
   <build>
   	<pluginManagement>
   		<plugins>
