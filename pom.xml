@@ -3,11 +3,16 @@
   <groupId>in.naishe</groupId>
   <artifactId>cavespring</artifactId>
   <name>CaveSpring</name>
-  <version>0.0.1</version>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <description>Route53 Java API</description>
   <inceptionYear>2010</inceptionYear>
   <url>https://github.com/naishe/cavespring</url>
+  <parent>
+  	<groupId>org.sonatype.oss</groupId>
+  	<artifactId>oss-parent</artifactId>
+  	<version>7</version>
+  </parent>
   <scm>
   	<connection>scm:git:git@github.com:naishe/cavespring.git</connection>
   	<developerConnection>scm:git:git@github.com:naishe/cavespring.git</developerConnection>
